@@ -32,7 +32,7 @@ for(int i=0;i<n;i++){
 	}
 }
 if(n1>n2)
-	System.out.println("The index of greatest difference is:"+i1);	
+	System.out.println("The index of the largest element which has greatest difference is:"+i1);	
 
 	else
 		System.out.println("The index of the largest element which has greatest difference is:"+i2);

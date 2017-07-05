@@ -10,19 +10,28 @@ public class Remove {
    int n=s.nextInt();
    System.out.println("Enter the elements:");
    int arr[]=new int[n];
+   int j=0;
 for(int i=0;i<n;i++){
 	arr[i]=s.nextInt();
 }
 System.out.println("Enter the element to be removed:");
 int element=s.nextInt();
 for(int i=0;i<n;i++){
-	if(arr[i]==element){
-		arr[i]=arr[i+1];
+	if(arr[i]!=element){
+		j++;
 	}
-	n--;
+} int count=0;
+	int array[]=new int[j];
+	for(int i=0;i<n;i++){
+		if(arr[i]!=element){
+			array[count]=arr[i];
+			count++;
+		}
 	}
-for(int i=0;i<n;i++){
-System.out.println(arr[i]);
+	for(int i=0;i<j;i++){
+		System.out.println(array[i]);
+	}
+	s.close();
 	}
 }
-}
+

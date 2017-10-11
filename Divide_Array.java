@@ -6,7 +6,7 @@ public class Divide_Array {
  int len=s.nextInt();
  int arr[]=new int[len];
 		for(int i=0;i<len;i++){
-			arr[i]=s.nextIn();
+			arr[i]=s.nextInt();
 		}
  int div=0,div1=0,temp=0;
  int count=0,sum=0,sum1=0;

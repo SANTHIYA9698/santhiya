@@ -1,8 +1,14 @@
 package guvi;
+import java.util.*;
 public class Longeststring {
 public static void main(String[] args) {	
 				int length=999999,j=0;
-				String input2[]={"John","Johny","Johnsi"};
+	Scanner s=new Scanner(System.in);
+	int n=s.nextInt();
+				String input2[]=new String[n];
+	for(int i=0;i<n;i++){
+		input[i]=s.next();
+	}
 			for(int i=0;i<input2.length;i++){
 				if(input2[i].length()<length){
 					length=input2[i].length();

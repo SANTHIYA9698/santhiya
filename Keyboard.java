@@ -1,9 +1,10 @@
 package Hunter;
-
+import java.util.*;
 public class Keyboard {
 
 	public static void main(String[] args) {
-       int input=456;
+		Scanner s=new Scanner(System.in);
+       int input=s.nextInt();
        int rem=0;
        String output="";
        while(input!=0){
@@ -49,5 +50,6 @@ public class Keyboard {
     		   System.out.println(output1.substring(i,j));
     	   }
        }
+		s.close();
 	}
 }

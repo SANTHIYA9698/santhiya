@@ -1,21 +1,26 @@
 package Hunter;
-
+import java.util.*;
 public class PossibleCombinations {
 
 	public static void main(String[] args) {
-         int n=6;
-         int k=3;
-         for(int i=1;i<=n;i++){
-        	 for(int m=i;m<n;m++){
-        		 if(i!=m){
-        	System.out.print(i+" ");
-        	 int temp=k;
-        	 for(int j=m;(temp>1);j++,temp--){
-        		 System.out.print(j+" ");
+		Scanner s=new Scanner(System.in);
+         int n=s.nextInt();
+         int k=s.nextInt();
+        if(n>k) {
+         for(int i=1;i<n;i++) {
+        	 for(int j=k;j<=n;j++) {
+        		 if((i!=j)&&(i<j))
+        		 System.out.println(i+" "+j);
         	 }
-        	 System.out.println();
-        		 }
          }
+         }
+         else {
+        	 for(int i=1;i<k;i++) {
+            	 for(int j=n;j<=k;j++) {
+            		 if((i!=j)&&(i<j))
+            		 System.out.println(i+" "+j);
+            	 }
+             }
          }
 	}
 

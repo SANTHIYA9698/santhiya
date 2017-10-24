@@ -1,10 +1,11 @@
 package Hunter;
-
+import java.util.*;
 public class MAX_INT {
 
 	public static void main(String[] args) {
-      int number1=11;
-      int number2=3;
+		Scanner s=new Scanner(System.in);
+      int number1=s.nextInt();
+      int number2=s.nextInt();
       int Division=0;
       if(number1<number2){
     	  System.out.println("MAX_INT");
@@ -16,5 +17,6 @@ public class MAX_INT {
       }
       System.out.println("The Division of Integer1 and Integer2 is:"+Division);
 	}
+		s.close();
 	}
 }
